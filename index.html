@@ -5,9 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FG-Carpinteria</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/servicios.css" />
   </head>
   <body>
-    <h1>FG-Carpinteria</h1>
-    <h2>Coming Soon</h2>
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="/">FG-CARPINTERIA</a>
+      </div>
+      <div class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="navbar-links">
+        <ul class="navbar-item">
+          <li>
+            <a href="#productos-y-servicios">PRODUCTOS</a>
+          </li>
+          <li>
+            <a href="#productos-y-servicios">SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#productos-y-servicios">GALERIA</a>
+          </li>
+          <li>
+            <a href="#productos-y-servicios">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-contain">
+        <div class="main-section">
+          <h1>MUEBLES DE CALIDAD</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            architecto doloremque obcaecati provident corporis saepe alias, quo
+            cumque neque dolor voluptatibus nam enim unde perspiciatis aut
+            minima, inventore, doloribus vitae?
+          </p>
+          <button>CONTACTANOS</button>
+        </div>
+      </div>
+    </main>
+    <!-- Productos y servicios -->
+    <section id="productos-y-servicios" class="servicios">
+      <img class="bg-servicios" src="./assets/img/baño.JPG" alt="" />
+      <img class="bg-servicios" src="./assets/img/bg_servicios.svg" alt="" />
+      <div class="servicios-contain">
+        <div class="servicios-productos">
+          <div class="servicios-list">
+            <h2>Productos</h2>
+            <ul class="list">
+              <li class="list-item">Comedores para interiores y exteriores</li>
+              <li class="list-item">Cocinas integrales</li>
+              <li class="list-item">Salas</li>
+              <li class="list-item">Muebles en general</li>
+            </ul>
+          </div>
+          <div class="servicios-list">
+            <h2>Servicios</h2>
+            <ul class="list">
+              <li class="list-item">Elaboración de muebles a la medida</li>
+              <li class="list-item">Reparació de muebles dañados</li>
+              <li class="list-item">Restauración de muebles maltratados</li>
+              <li class="list-item">Trtamiento preventivo contra polilla</li>
+            </ul>
+          </div>
+        </div>
+        <div class="servicios-img">
+          <img src="./assets/img/cama.JPG" alt="" />
+          <img src="./assets/img/sala_juguetero.JPG" alt="" />
+          <img src="./assets/img/main_2.JPG" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Productos y servicios -->
+    <script type="text/javascript" src="./js/navbar.js"></script>
   </body>
 </html>

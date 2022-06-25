@@ -1,0 +1,40 @@
+.servicios {
+  /* background-image: url("../assets/img/main.JPG");
+  background-image: url("../assets/img/bg_servicios.svg"); 
+  /* background-size: cover; */
+  background-color: rgba(20, 0, 0, 0.4);
+  height: 100vh;
+  position: relative;
+}
+.bg-servicios {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+.bg-servicios:first-of-type {
+  right: 0;
+  width: 100%;
+}
+.servicios-productos {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+.servicios-list {
+  font-size: 1.5rem;
+  color: white;
+}
+.servicios-list h2 {
+  font-weight: bold;
+}
+.servicios-img {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+.servicios-img img {
+  /* height: 10rem; */
+  border-radius: 10px;
+  width: 20vw;
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.4);
+}

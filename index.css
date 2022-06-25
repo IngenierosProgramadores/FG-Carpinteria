@@ -1,0 +1,12 @@
+@font-face {
+  font-family: cairo;
+  src: url("./assets/fonts/Cairo/Cairo-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+  font-family: cairo, Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
