@@ -1,7 +1,4 @@
-@font-face {
-  font-family: cairo;
-  src: url("./assets/fonts/Cairo/Cairo-VariableFont_wght.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
   font-family: cairo, Arial, Helvetica, sans-serif;
@@ -9,4 +6,5 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
