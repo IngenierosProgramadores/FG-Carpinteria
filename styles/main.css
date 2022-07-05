@@ -1,6 +1,6 @@
 main {
   min-height: 100vh;
-  background-image: url("/assets/img/main.JPG");
+  background-image: url("../assets/img/main.JPG");
   background-size: cover;
   background-repeat: no-repeat;
 }
