@@ -30,7 +30,6 @@
 .servicios-img {
   display: flex;
   justify-content: space-around;
-  margin: 5%;
 }
 .servicios-img img {
   /* height: 10rem; */
