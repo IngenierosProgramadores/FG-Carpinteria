@@ -10,8 +10,6 @@
       content="Carpinteria en Puerto Vallarta y Bahía de Banderas. Reparación de muebles y elaboración de muebles."
     />
     <meta property="og:image" content="./assets/preview.png" />
-    <meta property="og:url" content="http://fg-carpinteria.pvjalisco.com/" />
-    <title>Carnitas el Pitillal</title>
     <title>FG-Carpinteria</title>
     <link
       rel="shortcut icon"
@@ -20,7 +18,7 @@
     />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
     <link rel="stylesheet" href="styles/servicios.css" />
     <link rel="stylesheet" href="styles/galeria.css" />
     <link rel="stylesheet" href="styles/anuncio.css" />
@@ -44,9 +42,6 @@
           <li>
             <a href="#productos-y-servicios">PRODUCTOS Y SERVICIOS</a>
           </li>
-          <!-- <li>
-            <a href="#productos-y-servicios">SERVICIOS</a>
-          </li> -->
           <li>
             <a href="#gallery">GALERIA</a>
           </li>
@@ -57,25 +52,63 @@
       </div>
     </nav>
 
-    <main id="home">
-      <div class="main-contain">
-        <div class="main">
-          <div class="main-img">
-            <img src="./assets/logo_v2.png" alt="" />
+    <!-- START SLIDER -->
+
+    <main id="container-slider">
+      <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"
+        ><i class="fas fa-chevron-circle-left"></i
+      ></a>
+      <a href="javascript: fntExecuteSlide('next');" class="arrowNext"
+        ><i class="fas fa-chevron-circle-right"></i
+      ></a>
+      <ul class="listslider">
+        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+        <li><a itlist="itList_1" href="#"></a></li>
+        <li><a itlist="itList_2" href="#"></a></li>
+      </ul>
+      <ul id="slider">
+        <li
+          style="
+            background-image: url('./assets/img/main.JPG');
+            z-index: 0;
+            opacity: 1;
+          "
+        >
+          <div class="content_slider">
+            <div>
+              <h1>PRODUCTOS Y SERVICIOS DE CARPINTERIA</h1>
+              <p>
+                Descubre nuestra gran variedad de productos y servicios que
+                tenemos para ti.
+              </p>
+              <a href="#productos-y-servicios" class="btnSlider">Ver más</a>
+            </div>
           </div>
-          <div class="main-section">
-            <h1>TU CARPINTERIA DE CONFIANZA</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              architecto doloremque obcaecati provident corporis saepe alias,
-              quo cumque neque dolor voluptatibus nam enim unde perspiciatis aut
-              minima, inventore, doloribus vitae?
-            </p>
-            <a href="#contacto">CONTACTANOS</a>
+        </li>
+        <li style="background-image: url('./assets/img/main_2.JPG')">
+          <div class="content_slider">
+            <div>
+              <h2>DESCUBRE NUESTRO TRABAJO</h2>
+              <p>
+                Mira nuestro portafolio de trabajo en la sección de galería y
+                descubre todo lo que podemos hacer para ti.
+              </p>
+              <a href="#gallery" class="btnSlider">Ver galería</a>
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <li style="background-image: url('./assets/img/main_3.JPG')">
+          <div class="content_slider">
+            <div>
+              <h2>PONTE EN CONTACTO</h2>
+              <p>Escribenos y muy pronto nos pondremos en contacto contigo.</p>
+              <a href="#contacto" class="btnSlider">Contactanos</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </main>
+    <!-- END SLIDER -->
     <!-- Productos y servicios -->
     <section id="productos-y-servicios" class="servicios">
       <div class="servicios-contain">
@@ -266,5 +299,10 @@
     </footer>
     <script type="text/javascript" src="./js/navbar.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <script defer src="./js/functions.js"></script>
   </body>
 </html>
