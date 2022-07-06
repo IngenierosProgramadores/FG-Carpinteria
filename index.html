@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Carnitas El Pitillal" />
+    <meta
+      property="og:description"
+      content="Carpinteria en Puerto Vallarta y Bahía de Banderas. Reparación de muebles y elaboración de muebles."
+    />
+    <meta property="og:image" content="./assets/preview.png" />
+    <meta property="og:url" content="http://fg-carpinteria.pvjalisco.com/" />
+    <title>Carnitas el Pitillal</title>
     <title>FG-Carpinteria</title>
     <link
       rel="shortcut icon"
-      href="./assets/logo_black.png"
+      href="./assets/logo_black.ico"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="index.css" />
@@ -15,11 +23,12 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/servicios.css" />
     <link rel="stylesheet" href="styles/galeria.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="brand-title">
-        <a href="/"><img src="./assets/logo.png" alt="logo.png" /></a>
+        <a href="/"><img src="./assets/logo_v2.png" alt="logo.png" /></a>
       </div>
       <div class="toggle-button">
         <span class="bar"></span>
@@ -28,6 +37,9 @@
       </div>
       <div class="navbar-links">
         <ul class="navbar-item">
+          <li>
+            <a href="#home">INICIO</a>
+          </li>
           <li>
             <a href="#productos-y-servicios">PRODUCTOS Y SERVICIOS</a>
           </li>
@@ -38,13 +50,13 @@
             <a href="#gallery">GALERIA</a>
           </li>
           <li>
-            <a href="#productos-y-servicios">CONTACTO</a>
+            <a href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <main>
+    <main id="home">
       <div class="main-contain">
         <div class="main">
           <div class="main-section">
@@ -76,10 +88,10 @@
           <div class="servicios-list">
             <h2>Servicios</h2>
             <ul class="list">
-              <li class="list-item">Elaboración de muebles a la medida</li>
-              <li class="list-item">Reparació de muebles dañados</li>
+              <li class="list-item">Elaboración de muebles personalizados</li>
+              <li class="list-item">Reparación de muebles dañados</li>
               <li class="list-item">Restauración de muebles maltratados</li>
-              <li class="list-item">Trtamiento preventivo contra polilla</li>
+              <li class="list-item">Tratamiento preventivo contra polilla</li>
             </ul>
           </div>
         </div>
@@ -159,6 +171,74 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo-footer pt">
+        <img src="./assets/logo_v2.png" alt="icono" />
+      </div>
+      <div class="pt">
+        <div class="referencia">
+          <h2>Contacto</h2>
+
+          <p>
+            Dirección: Francia 957, Brisas del Pacífico, 48290 Puerto Vallarta,
+            Jal.
+          </p>
+          <p>Telefono: 322-225-6472</p>
+          <div class="footer-icons">
+            <a
+              href="https://wa.me/523222256472"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./assets/svg/whatsapp_square.svg" alt="" />
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./assets/svg/facebook.svg" alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./assets/svg/instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="pt">
+        <div class="referencia">
+          <h2>Links</h2>
+          <a href="#home">
+            <p>Home</p>
+          </a>
+          <a href="#productos-y-servicios">
+            <p>Productos y Servicios</p>
+          </a>
+          <a href="#gallery">
+            <p>Galeria</p>
+          </a>
+          <a href="#contacto">
+            <p>Contacto</p>
+          </a>
+        </div>
+      </div>
+      <div class="pt">
+        <div class="powerby">
+          <h2>Powered by</h2>
+          <a
+            href="https://www.racoondevs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/LOGO-CAJA-BLANCO.png" alt="" />
+          </a>
+          <p>Copyright 2022 Desarrollado por Racoon Devs</p>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="./js/navbar.js"></script>
   </body>
 </html>
