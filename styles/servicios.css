@@ -62,6 +62,7 @@
   .servicios-img img {
     display: block;
     width: auto;
-    max-height: auto;
+    height: 100%;
+    max-height: 250px;
   }
 }
