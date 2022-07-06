@@ -4,7 +4,7 @@ footer {
   background-color: #080404;
   gap: 40px;
   color: white;
-  padding: 5%;
+  padding: 3%;
 }
 .content-principal {
   color: white;
@@ -71,6 +71,6 @@ hr {
     display: block;
   }
   .powerby img {
-    width: 80%;
+    width: 70%;
   }
 }

@@ -1,5 +1,6 @@
 .gallery-bg {
-  background-image: url("../assets/wood-bg.jpg");
+  background-image: url("../assets/gallery.jpeg");
+  /* background-color: dimgray; */
   background-size: cover;
 }
 /* Grid gallery */
@@ -13,7 +14,7 @@
 .grid-gallery {
   display: grid;
   min-height: auto;
-  gap: 10px;
+  /* gap: 10px; */
 
   grid-template-areas:
     "top top"
@@ -27,6 +28,7 @@
 }
 #name-gallery {
   grid-area: center;
+  text-shadow: 2px 2px 10px #000;
 }
 #bottom-gallery {
   grid-area: bottom;
@@ -37,7 +39,7 @@
   grid-template-columns: repeat(4, 1fr);
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 360px;
 }
 
 .gallery-picture {
@@ -70,6 +72,7 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
     margin: 0;
+    height: auto;
   }
   #top-gallery {
     grid-area: center;

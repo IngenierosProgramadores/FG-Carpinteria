@@ -11,9 +11,9 @@
   gap: 50px;
   align-items: center;
   position: relative;
-  transform: translateY(300px);
+  transform: translateY(200px);
   opacity: 0;
-  transition: 1.2s all ease;
+  transition: 1s all ease;
 }
 .anuncio-container.active {
   transform: translateY(0);
