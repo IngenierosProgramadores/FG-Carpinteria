@@ -9,7 +9,7 @@
 .servicios-contain {
   text-shadow: 4px 4px 4px #000;
   height: 100%;
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
   /* background-image: url("../assets/servicios.png");
   background-size: cover;
   background-repeat: no-repeat; */
@@ -37,6 +37,7 @@
   /* height: 10rem; */
   border-radius: 10px;
   width: 20vw;
+  max-height: fit-content;
   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.4);
 }
 .servicios-info {
@@ -61,5 +62,6 @@
   .servicios-img img {
     display: block;
     width: auto;
+    max-height: auto;
   }
 }
