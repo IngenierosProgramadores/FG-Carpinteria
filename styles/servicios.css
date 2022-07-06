@@ -13,7 +13,7 @@
   /* background-image: url("../assets/servicios.png");
   background-size: cover;
   background-repeat: no-repeat; */
-  padding: 5%;
+  padding: 2% 5%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -21,6 +21,11 @@
 .servicios-productos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 0 5%;
+}
+.servicios-title img {
+  width: 100px;
 }
 .servicios-list {
   font-size: 1.5rem;
@@ -28,6 +33,7 @@
 }
 .servicios-list h2 {
   font-weight: bold;
+  font-size: 4rem;
 }
 .servicios-img {
   display: flex;
@@ -42,6 +48,7 @@
 }
 .servicios-info {
   color: white;
+  backdrop-filter: 50px;
 }
 
 @media (max-width: 768px) {
