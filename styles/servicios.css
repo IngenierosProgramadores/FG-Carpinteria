@@ -1,24 +1,26 @@
 .servicios {
   /* background-image: url("../assets/img/main.JPG");
-  background-image: url("../assets/img/bg_servicios.svg"); 
   /* background-size: cover; */
-  background-color: rgba(20, 0, 0, 0.4);
-  height: 100vh;
-  position: relative;
+  /* min-height: 100vh; */
+  height: auto;
+  background-image: url("../assets/carpintero.jpg");
+  background-size: cover;
 }
-.bg-servicios {
-  position: absolute;
+.servicios-contain {
+  text-shadow: 4px 4px 4px #000;
   height: 100%;
-  z-index: -1;
-}
-.bg-servicios:first-of-type {
-  right: 0;
-  width: 100%;
+  backdrop-filter: blur(2px);
+  /* background-image: url("../assets/servicios.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .servicios-productos {
-  display: flex;
-  justify-content: space-around;
-  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .servicios-list {
   font-size: 1.5rem;
@@ -36,4 +38,28 @@
   border-radius: 10px;
   width: 20vw;
   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+.servicios-info {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .servicios-list h2 {
+    text-align: center;
+  }
+  .servicios-productos {
+    display: block;
+  }
+  /* .list {
+    font-size: 1rem;
+  } */
+  .servicios-img {
+    padding: 2rem 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .servicios-img img {
+    display: block;
+    width: auto;
+  }
 }
