@@ -39,8 +39,8 @@
   display: flex;
   justify-content: space-around;
 }
+
 .servicios-img img {
-  /* height: 10rem; */
   border-radius: 10px;
   width: 20vw;
   max-height: fit-content;
@@ -54,6 +54,11 @@
 @media (max-width: 768px) {
   .servicios-list h2 {
     text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  .servicios-list {
+    font-size: 1.5rem;
   }
   .servicios-productos {
     display: block;
