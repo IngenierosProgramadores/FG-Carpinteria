@@ -1,3 +1,45 @@
 #contacto{
+    background-image: url(../assets/fondo-contacto.png);
+
     height: 100vh;
+}
+#contacto > div.formulario{
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+    display: inline-block;
+}
+#contacto > div.mapa{
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+    display: inline-block;
+}
+.contacto div p{
+    color: #FFFFFF;
+}
+.contacto input, label{
+    display: block;
+}
+.contacto label{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 56px;
+    /* display: flex; */
+    color: #FFFFFF;
+}
+#contacto > div h2{
+margin-top: 10%;
+margin-left: 10%;
+
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 112px;
+display: flex;
+align-items: center;
+color: #ffffff;
 }
