@@ -16,14 +16,12 @@
   background-color: rgba(8, 8, 233, 0.08);
   /* background-color: rgba(28, 10, 0, 0.42); */
 }
-.contacto h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 112px;
-  color: #ffffff;
-}
 
+.title-contacto h2 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
 .formulario {
   width: 50%;
 }
@@ -42,9 +40,7 @@
 }
 .formulario label {
   color: #ffffff;
-  display: block;
   font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .formulario input {
@@ -99,5 +95,8 @@
   .mapa {
     width: 100%;
     /* height: 100%; */
+  }
+  .title-contacto h2 {
+    font-size: 3rem;
   }
 }
