@@ -1,3 +1,4 @@
+
 #modal-grid {
   display: grid;
   width:100%; 
@@ -17,6 +18,17 @@ aside:first-of-type {
 aside:last-of-type {
   grid-area: right;
 }
+#boxes .window {
+  width:80%; 
+  height:720px;
+  position:fixed;
+  display:none;
+  z-index:9999;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
 #modal-grid .modal-text {
   display: flex;
   flex-direction: column;
@@ -24,17 +36,17 @@ aside:last-of-type {
   text-align: center;
   color: #fff;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 #modal-grid .modal-text #modal-title {
   font-size: 60px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 #modal-grid .modal-text #modal-desc {
-  font-size: 30px;
+  font-size: 25px;
   padding-bottom: 2rem;
   line-height: 56.22px;
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 #modal-grid .modal-text .button-div {
   width: 100%;
@@ -61,18 +73,16 @@ aside:last-of-type {
     display:none;
  }
   
-#boxes .window {
-  width:80%; 
-  height:720px;
-  position:fixed;
-  display:none;
-  z-index:9999;
-  
-}
 
-  .modal-img {
+  .modal-box-img {
     width: 100%;
     height: 100%;
+    max-height: 720px;
+  }
+  .modal-box-img .modal-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
     object-fit: cover;
     border-radius: 20px;
   }
@@ -92,4 +102,14 @@ aside:last-of-type {
  
 .close:hover {
     background: rgba(0,0,0,1);
+}
+@media (max-width: 850px) {
+  #modal-grid  {
+    grid-template-areas:
+    "left left"
+    "right right";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
 }
