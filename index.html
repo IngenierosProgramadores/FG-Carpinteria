@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/servicios.css" />
     <link rel="stylesheet" href="styles/galeria.css" />
     <link rel="stylesheet" href="styles/anuncio.css" />
+    <link rel="stylesheet" href="styles/contacto.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/modal.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -316,7 +317,53 @@
         </div>
       </div>
     </section>
+    
+    <!-- Contacto -->
+      <section id="contacto" class="contacto">
+        <div class="contacto-container">
+          <div class="formulario">
+            <div> 
+              <h2>Contacto</h2>  
+            </div>
+            <form action="">
+              <label for="fname">Nombre completo</label>
+              <input type="text" id="fname" name="fname" required>
+              <label for="email">Correo electronico</label>
+              <input type="email" id="email" name="email" required>
+              <label for="tel">Telefono</label>
+              <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required>
+              <label for="comentarios">Comentarios</label>
+              <input type="tex" id="comentarios" name="cometarios" required>
+              <button type="submit" name="submit">Enviar</button>
+            </form>
+          </div> 
+ 
+          <div class="mapa">
+            <div>  
+                <h2>Encuentranos</h2>  
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.183161617491!2d-105.1904697!3d20.662126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84214f0dfee38b49%3A0xa498cca5058cbb49!2sBarranquilla%201641%2C%20Vista%20Hermosa%2C%2048290%20Puerto%20Vallarta%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1657187995814!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="iconomap"><img src="./assets/svg/location.svg" alt="" /><p> Francia 957, Brisas del Pacífico, 48290 Puerto Vallarta, Jal.</p></div>
+           
+              <a
+              href="https://wa.me/523221129888"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <div class="iconomap">
+                  <img src="./assets/svg/whatsapp.svg" alt="" />
+                  <p>
+                    322-112-98-88
+                  </p>
+                </div>
+              </a> 
+          </div>
+        </div>
+        
+      </section>
 
+    <!-- Fin contacto -->
+    
     <!-- Footer -->
     <footer>
       <div class="logo-footer pt">
@@ -327,13 +374,12 @@
           <h2>Contacto</h2>
 
           <p>
-            Dirección: Francia 957, Brisas del Pacífico, 48290 Puerto Vallarta,
-            Jal.
+            Dirección: Francia 957, Brisas del Pacífico, 48290 Puerto Vallarta, Jal.
           </p>
-          <p>Telefono: 322-225-6472</p>
+          <p>Telefono: 322-112-98-88</p>
           <div class="footer-icons">
             <a
-              href="https://wa.me/523222256472"
+              href="https://wa.me/523221129888"
               target="_blank"
               rel="noopener noreferrer"
               ><img src="./assets/svg/whatsapp_square.svg" alt="" />
