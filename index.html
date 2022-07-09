@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="styles/galeria.css" />
     <link rel="stylesheet" href="styles/anuncio.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -109,6 +111,33 @@
       </ul>
     </main>
     <!-- END SLIDER -->
+    <div id="boxes">
+      <!-- #customize your modal window here -->
+    
+      <div class="window">
+      <div id="modal-grid">
+        <aside class="modal-img">
+          <img
+          class="modal-img"
+          src="./assets/img/390e0628-7844-40f1-bf44-f58a504c8273.JPG"
+          alt=""
+          /> 
+        </aside>
+        <aside class="modal-text">
+          <h1 id="modal-title"></h1>
+          <p id="modal-desc"></p>
+          <div class="button-div">
+            <a href="#gallery" class="button">Más información</a>
+          </div>
+        </aside>      
+        <!-- close button is defined as close class -->
+        <!-- <a class="close" popup-close="popup-1" href="javascript:void(0)">x</a>     -->
+      </div>
+      </div>
+      
+      <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->	
+       <div id="mask"></div>
+    </div>
     <!-- Productos y servicios -->
     <section id="productos-y-servicios" class="servicios">
       <div class="servicios-contain">
@@ -174,26 +203,56 @@
         <!-- Top Gallery -->
         <div id="top-gallery">
           <div id="grid-pictures">
-            <div class="gallery-picture">
+            <div class="gallery-picture" href=".window">
               <img
+                class="main-img"
                 src="./assets/img/390e0628-7844-40f1-bf44-f58a504c8273.JPG"
                 alt=""
               />
+              <h1>Espejo</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis, repellat non vel cumque doloribus accusamus sunt provident recusandae a dolorum officiis, obcaecati at voluptates magnam labore, vero laboriosam delectus?</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-picture">
+            <div class="gallery-picture" href=".window">
               <img
+              class="main-img"
                 src="./assets/img/5c870773-40c9-42e4-b119-80580e4ee520.JPG"
                 alt=""
               />
+              <h1>Isla Cocina</h1>
+              <p>Cocina integral elaborada con  madera de pino en color perla. Cajones corredizos amplios y gabinetes con puertas en partida de dos aguas.  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-picture">
-              <img src="./assets/img/cama.JPG" alt="" />
+            <div class="gallery-picture" href=".window">
+              <img class="main-img" src="./assets/img/cama.JPG" alt=""/>
+              <h1>Cama</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic repellat vel sit, obcaecati praesentium eius fugiat iure odio voluptatibus ut, placeat tempore perspiciatis dolorum sunt doloremque sequi est at!</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-picture">
-              <img
+            <div class="gallery-picture" href=".window">
+              <img class="main-img"
                 src="./assets/img/28fb9c32-a000-4584-9811-e2cd34f850e9.JPG"
                 alt=""
               />
+              <h1>Espejo</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum labore libero alias, dolor eius fuga! Rerum eius, delectus nisi perspiciatis accusantium labore deleniti necessitatibus? Fugit mollitia iure recusandae quos magni?</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -204,26 +263,54 @@
         <!-- Bottom Gallery -->
         <div id="bottom-gallery">
           <div id="grid-pictures">
-            <div class="gallery-picture">
-              <img
+            <div class="gallery-picture" href=".window">
+              <img class="main-img"
                 src="./assets/img/57f37378-406f-4754-a384-3f8d15d59b95.JPG"
                 alt=""
               />
+              <h1>Alacena</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vel hic veritatis itaque molestias, neque perferendis? Iure esse sapiente, quo praesentium nisi odit sed debitis doloribus voluptatum voluptate dolorum delectus.</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-picture">
-              <img
+            <div class="gallery-picture" href=".window">
+              <img class="main-img"
                 src="./assets/img/7ebf0d54-d560-4ef9-89ed-77e92a56c64a.JPG"
                 alt=""
               />
+              <h1>Sala</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus qui magnam cupiditate facilis nihil, nulla in exercitationem quas unde quasi nemo ullam, expedita aliquam explicabo atque officia eius asperiores et?</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-picture">
-              <img src="./assets/img/baño.JPG" alt="" />
+            <div class="gallery-picture" href=".window">
+              <img class="main-img" src="./assets/img/baño.JPG" alt="" />
+              <h1>Baño</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure debitis in neque doloribus, consequuntur impedit laborum magni error laudantium? Architecto perferendis inventore tempora. Enim nemo quam veniam est? Fugiat!</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
-            <div class="gallery-picture">
-              <img
+            <div class="gallery-picture" href=".window">
+              <img class="main-img"
                 src="./assets/img/968e1fb5-6897-400f-bd8a-a91dfc3a14fc.JPG"
                 alt=""
               />
+              <h1>Silla</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque veniam magnam exercitationem provident dolor odit eligendi voluptates ipsum porro temporibus voluptatibus, impedit sunt laudantium architecto vitae in iusto quod esse!</p>
+              <div class="lupa-img" >
+                <div class="lupa">
+                  <img  src="./assets/svg/lupa.svg" width="100" height="100" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -299,6 +386,7 @@
     </footer>
     <script type="text/javascript" src="./js/navbar.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/gallery.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
