@@ -37,5 +37,5 @@
     mail($to,$subject, utf8_decode($message), $headers);
     echo "The email message was sent.";
     
-    header("Location:https://racoondevs.com");
+    header("Location:https://fgcarpinteria.pvj.mx");
 ?>
