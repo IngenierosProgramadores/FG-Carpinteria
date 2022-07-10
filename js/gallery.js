@@ -1,13 +1,11 @@
 $(document).ready(function() {
   var $window = $(window);
-  $( window ).resize(function() {
+  $(window).resize(function() {
         let maskHeight = $(document).height();
         let maskWidth = $window.width();
         $('#mask').css({'width':maskWidth,'height':maskHeight});
         let id = $('.gallery-picture').attr('href');
-        let winH = $window.height();
         let winW = $window.width();
-        $(id).css('top',  winH/2-$(id).height()/2);
         $(id).css('left', winW/2-$(id).width()/2);
   });
   $('.gallery-picture').click(function(e) {
