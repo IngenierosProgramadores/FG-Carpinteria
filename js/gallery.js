@@ -1,5 +1,9 @@
 $(document).ready(function() {  
-
+  $( window ).resize(function() {
+        let maskHeight = $(document).height();
+        let maskWidth = $window.width();
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+  });
   var $window = $(window);
   $('.gallery-picture').click(function(e) {
     //Cancel the link behavior
@@ -8,7 +12,7 @@ $(document).ready(function() {
           var id = $(this).attr('href');
           //Get the screen height and width
           var maskHeight = $(document).height();
-          var maskWidth = $window.width();
+          var maskWidth = $window.width()+20;
   
           //Set height and width to mask to fill up the whole screen
           $('#mask').css({'width':maskWidth,'height':maskHeight});
@@ -22,7 +26,7 @@ $(document).ready(function() {
           var winW = $window.width();
         
           //Set the popup window to center
-          $(id).css('top',  winH/2-$(id).height()/1.8);
+          $(id).css('top',  winH/2-$(id).height()/2);
           $(id).css('left', winW/2-$(id).width()/2);
   
           //transition effect
@@ -33,11 +37,13 @@ $(document).ready(function() {
           $(".modal-img").attr("src", img[0].src);
           $("#modal-title").text(title);
           $("#modal-desc").text(description);
+          $("body").css("overflow","hidden")
   
   });
   
   //if close button is clicked
   $('.window .close').click(function (e) {
+        console.log("close button");
           //Cancel the link behavior
           e.preventDefault();
           $('#mask, .window').hide();
@@ -47,6 +53,7 @@ $(document).ready(function() {
   $('#mask').click(function () {
           $(this).hide();
           $('.window').hide();
+          $("body").css("overflow","visible")
   });                     
   
 });
