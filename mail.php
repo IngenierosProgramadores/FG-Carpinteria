@@ -21,7 +21,7 @@
     error_reporting( E_ALL );
 
     $from = 'admin@pvj.mx';
-    $to = "marnezcam@gmail.com";
+    $to = "fgcarpinteria@pvj.mx";
     $subject = "Contacto RacoonDevs";
 
     $message = "NOMBRE : " . $nombre  . ",\r\n";
