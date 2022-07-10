@@ -1,6 +1,6 @@
 <?php
-    $nombre = $_POST['name'];
-    $correo = $_POST['correo'];
+    $nombre = $_POST['fname'];
+    $correo = $_POST['email'];
     $telefono = $_POST['tel'];
     $comentarios = $_POST['comentarios'];
 
