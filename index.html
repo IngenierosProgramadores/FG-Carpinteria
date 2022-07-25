@@ -36,34 +36,37 @@
     ></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="brand-title">
-          <a href="/"><img src="./assets/logo_v2.png" alt="logo.png" /></a>
-        </div>
-        <div class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <div class="navbar-links">
-          <ul class="navbar-item">
-            <li>
-              <a href="#home">INICIO</a>
-            </li>
-            <li>
-              <a href="#productos-y-servicios">PRODUCTOS Y SERVICIOS</a>
-            </li>
-            <li>
-              <a href="#gallery">GALERIA</a>
-            </li>
-            <li>
-              <a href="#contacto">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="/"><img src="./assets/logo_v2.png" alt="logo.png" /></a>
+      </div>
+      <div class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="navbar-links">
+        <ul class="navbar-item">
+          <li>
+            <a href="#home">INICIO</a>
+          </li>
+          <li>
+            <a href="#productos-y-servicios">PRODUCTOS Y SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#gallery">GALERIA</a>
+          </li>
+          <li>
+            <a href="#contacto">CONTACTO</a>
+          </li>
+          <!-- START TRADUCTOR -->
+          <div id="google_translate_element" class="google"></div>
+          <!-- END TRADUCTOR  -->
+        </ul>
+      </div>
+    </nav>
+    
+
     <!-- START SLIDER -->
 
     <main id="container-slider">
@@ -87,6 +90,7 @@
           "
         >
           <div class="content_slider">
+
             <div>
               <h1>PRODUCTOS Y SERVICIOS DE CARPINTERIA</h1>
               <p>
@@ -511,5 +515,13 @@
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
     ></script>
     <script defer src="./js/functions.js"></script>
+    <!-- Script de google -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+              }
+      </script>
+      
+      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

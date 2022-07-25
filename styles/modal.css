@@ -2,7 +2,7 @@
 #modal-grid {
   display: grid;
   width:100%; 
-  height:720px;
+  height: 100%;
   gap: 10px;
   grid-template-areas:
     "left right"
@@ -20,7 +20,7 @@ aside:last-of-type {
 #boxes .window {
   position:fixed;
   width:80%; 
-  height:720px;
+  height: 80%;
   display:none;
   z-index:9999;
   text-align: center;
