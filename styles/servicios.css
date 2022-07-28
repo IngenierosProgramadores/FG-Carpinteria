@@ -1,28 +1,19 @@
 .servicios {
-  /* background-image: url("../assets/img/main.JPG");
-  /* background-size: cover; */
-  /* min-height: 100vh; */
   height: auto;
   background-image: url("../assets/carpintero_new.jpeg");
   background-size: cover;
+  background-position: center;
 }
 .servicios-contain {
   text-shadow: 4px 4px 4px #000;
   height: 100%;
-  /* backdrop-filter: blur(2px); */
-  /* background-image: url("../assets/servicios.png");
-  background-size: cover;
-  background-repeat: no-repeat; */
   padding: 2% 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
 }
 .servicios-productos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 0 5%;
+  padding: 2% 5%;
 }
 .servicios-title img {
   width: 100px;
@@ -36,14 +27,15 @@
   font-size: 4rem;
 }
 .servicios-img {
-  display: flex;
-  justify-content: space-around;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .servicios-img img {
   border-radius: 10px;
-  width: 20vw;
-  max-height: fit-content;
+  width: 100%;
   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.4);
 }
 .servicios-info {
@@ -51,6 +43,15 @@
   backdrop-filter: 50px;
 }
 
+@media (max-width: 900px) {
+  .servicios-img {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicios-img img {
+    object-fit: cover;
+  }
+}
 @media (max-width: 768px) {
   .servicios-list h2 {
     text-align: center;
@@ -61,21 +62,10 @@
     font-size: 1.5rem;
   }
   .servicios-productos {
-    display: block;
-  }
-  /* .list {
-    font-size: 1rem;
-  } */
-  .servicios-img {
-    padding: 2rem 0;
+    margin: 5%;
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
-  }
-  .servicios-img img {
-    display: block;
-    width: auto;
-    height: 100%;
-    max-height: 250px;
+    align-items: center;
   }
   .servicios-info {
     font-size: 0.7rem;

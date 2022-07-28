@@ -1,45 +1,30 @@
 .gallery-bg {
-  background-image: url("../assets/fondo.jpg");
-  /* background-color: dimgray; */
+  background-image: url("../assets/galeria_bg.jpg");
+  background-color: dimgray;
   background-size: cover;
 }
 /* Grid gallery */
-.gallery-name {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 112px;
-  color: #ffffff;
-}
-.grid-gallery {
-  display: grid;
-  min-height: auto;
-  /* gap: 10px; */
-
-  grid-template-areas:
-    "top top"
-    "center center"
-    "bottom bottom";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 2fr;
-}
-#top-gallery {
-  grid-area: top;
-}
 #name-gallery {
-  grid-area: center;
-  text-shadow: 2px 2px 10px #000;
+  text-align: center;
+  color: #fff;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-#bottom-gallery {
-  grid-area: bottom;
+.gallery-name {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-gallery {
+  columns: 1 320px;
+  column-gap: 1.5em;
 }
 
 #grid-pictures {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0;
-  padding: 0;
-  height: 360px;
+  margin: 1rem;
+  columns: 4 320px;
 }
 
 .gallery-picture {
@@ -47,6 +32,7 @@
   width: auto;
   height: 360px;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .gallery-picture .main-img {
@@ -82,34 +68,23 @@
   cursor: pointer;
 }
 
-#top-gallery,
-#name-gallery,
-#bottom-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (max-width: 768px) {
-  .grid-gallery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
-    gap: 0;
+  .gallery-bg {
+    background-image: url("../assets/galeria_bg.jpg");
+    background-size: contain;
+  }
+  .gallery-name {
+    display: inline-block;
+    text-shadow: 2px 2px #000;
+    padding: 0;
+    padding-top: 20%;
+  }
+  #name-gallery p {
+    text-shadow: 2px 2px #000;
+    padding: 0;
   }
   #grid-pictures {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0;
-    margin: 0;
-    height: auto;
-  }
-  #top-gallery {
-    grid-area: center;
-  }
-  #name-gallery {
-    grid-area: top;
-  }
-  #bottom-gallery {
-    grid-area: bottom;
+    columns: 4 320px;
+    column-gap: 1.5em;
   }
 }

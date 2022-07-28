@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Carpinteria en Puerto Vallarta y Bahía de Banderas. Reparación de muebles y elaboración de muebles."
+      content="Carpentry in Puerto Vallarta and Bahía de Banderas. Furniture repair and furniture making."
     />
     <meta property="og:title" content="FG - Carpintería" />
     <meta
       property="og:description"
-      content="Carpinteria en Puerto Vallarta y Bahía de Banderas. Reparación de muebles y elaboración de muebles."
+      content="Carpentry in Puerto Vallarta and Bahía de Banderas. Furniture repair and furniture making."
     />
     <meta property="og:image" content="./assets/preview.png" />
     <title>FG Carpinteria</title>
     <link
       rel="shortcut icon"
-      href="./assets/logo_black.ico"
+      href="../assets/logo_black.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/carousel.css" />
-    <link rel="stylesheet" href="styles/togglebtn.css" />
-    <link rel="stylesheet" href="styles/servicios.css" />
-    <link rel="stylesheet" href="styles/galeria.css" />
-    <link rel="stylesheet" href="styles/anuncio.css" />
-    <link rel="stylesheet" href="styles/contacto.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/carousel.css" />
+    <link rel="stylesheet" href="../styles/togglebtn.css" />
+    <link rel="stylesheet" href="../styles/servicios.css" />
+    <link rel="stylesheet" href="../styles/galeria.css" />
+    <link rel="stylesheet" href="../styles/anuncio.css" />
+    <link rel="stylesheet" href="../styles/contacto.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -39,27 +39,27 @@
   <body>
     <header class="header">
       <nav class="nav container" id="nav">
-        <a href="/" class="nav_logo">
-          <img src="./assets/logo.png" alt="logo.png" />
+        <a href="#home" class="nav_logo">
+          <img src="../assets/logo.png" alt="logo.png" />
         </a>
         <ul class="nav_links">
           <li class="nav_item">
-            <a href="/" class="nav_link">INICIO</a>
+            <a href="#home" class="nav_link">HOME</a>
           </li>
           <li class="nav_item">
-            <a href="#productos-y-servicios" class="nav_link"
-              >PRODUCTOS Y SERVICIOS</a
+            <a href="#products-&-services" class="nav_link"
+              >PRODUCTS & SERVICES</a
             >
           </li>
           <li class="nav_item">
-            <a href="#gallery" class="nav_link">GALERIA</a>
+            <a href="#gallery" class="nav_link">GALLERY</a>
           </li>
           <li class="nav_item">
-            <a href="#contacto" class="nav_link">CONTACTO</a>
+            <a href="#contact" class="nav_link">CONTACT</a>
           </li>
           <p>
             <label class="switch">
-              <input type="checkbox" class="check" />
+              <input type="checkbox" class="check" checked />
               <span class="slider"></span>
             </label>
           </p>
@@ -78,96 +78,98 @@
 
     <!-- START SLIDER -->
 
-    <main id="container-slider">
-      <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"
-        ><i class="fas fa-chevron-circle-left"></i
-      ></a>
-      <a href="javascript: fntExecuteSlide('next');" class="arrowNext"
-        ><i class="fas fa-chevron-circle-right"></i
-      ></a>
-      <ul class="listslider">
-        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
-        <li><a itlist="itList_1" href="#"></a></li>
-        <li><a itlist="itList_2" href="#"></a></li>
-      </ul>
-      <ul id="slider">
-        <li
-          style="
-            background-image: url('./assets/img/main.JPG');
-            z-index: 0;
-            opacity: 1;
-          "
-        >
-          <div class="content_slider">
-            <div>
-              <h1>PRODUCTOS Y SERVICIOS DE CARPINTERIA</h1>
-              <p>
-                Descubre nuestra gran variedad de productos y servicios que
-                tenemos para ti.
-              </p>
-              <a href="#productos-y-servicios" class="btnSlider">Ver más</a>
+    <main id="home">
+      <div id="container-slider">
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"
+          ><i class="fas fa-chevron-circle-left"></i
+        ></a>
+        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"
+          ><i class="fas fa-chevron-circle-right"></i
+        ></a>
+        <ul class="listslider">
+          <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+          <li><a itlist="itList_1" href="#"></a></li>
+          <li><a itlist="itList_2" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+          <li
+            style="
+              background-image: url('../assets/img/main.JPG');
+              z-index: 0;
+              opacity: 1;
+            "
+          >
+            <div class="content_slider">
+              <div>
+                <h1>CARPENTRY PRODUCTS AND SERVICES</h1>
+                <p>
+                  Discover our wide variety of products and services that we
+                  have for you
+                </p>
+                <a href="#productos-y-servicios" class="btnSlider">See more</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li style="background-image: url('./assets/img/main_2.JPG')">
-          <div class="content_slider">
-            <div>
-              <h2>DESCUBRE NUESTRO TRABAJO</h2>
-              <p>
-                Mira nuestro portafolio de trabajo en la sección de galería y
-                descubre todo lo que podemos hacer para ti.
-              </p>
-              <a href="#gallery" class="btnSlider">Ver galería</a>
+          </li>
+          <li style="background-image: url('../assets/img/main_2.JPG')">
+            <div class="content_slider">
+              <div>
+                <h2>DISCOVER OUR WORK</h2>
+                <p>
+                  Check out our portfolio of work in the gallery section and
+                  Discover everything we can do for you.
+                </p>
+                <a href="#gallery" class="btnSlider">Ver galería</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li style="background-image: url('./assets/img/main_3.JPG')">
-          <div class="content_slider">
-            <div>
-              <h2>PONTE EN CONTACTO</h2>
-              <p>Escribenos y muy pronto nos pondremos en contacto contigo.</p>
-              <a href="#contacto" class="btnSlider">Contactanos</a>
+          </li>
+          <li style="background-image: url('../assets/img/main_3.JPG')">
+            <div class="content_slider">
+              <div>
+                <h2>GET IN TOUCH</h2>
+                <p>Write us and we will contact you very soon.</p>
+                <a href="#contact" class="btnSlider">Contact us</a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </main>
     <!-- END SLIDER -->
 
     <!-- Productos y servicios -->
-    <section id="productos-y-servicios" class="servicios">
+    <section id="products-&-services" class="servicios">
       <div class="servicios-contain">
         <div class="servicios-productos">
           <div class="servicios-list">
-            <h2>Productos</h2>
+            <h2>Products</h2>
             <ul class="list">
-              <li class="list-item">Comedores para interiores y exteriores</li>
-              <li class="list-item">Cocinas integrales</li>
-              <li class="list-item">Salas</li>
-              <li class="list-item">Muebles en general</li>
+              <li class="list-item">Indoor and outdoor dining</li>
+              <li class="list-item">Integral kitchens.</li>
+              <li class="list-item">Couchs.</li>
+              <li class="list-item">Furniture in general.</li>
             </ul>
           </div>
           <div class="servicios-list">
-            <h2>Servicios</h2>
+            <h2>Services</h2>
             <ul class="list">
-              <li class="list-item">Elaboración de muebles personalizados</li>
-              <li class="list-item">Reparación de muebles dañados</li>
-              <li class="list-item">Restauración de muebles maltratados</li>
-              <li class="list-item">Tratamiento preventivo contra polilla</li>
+              <li class="list-item">Manufacture of custom furniture.</li>
+              <li class="list-item">Repair of damaged furniture.</li>
+              <li class="list-item">Restoration of damaged furniture.</li>
+              <li class="list-item">Preventive treatment against moth.</li>
             </ul>
           </div>
         </div>
         <div class="servicios-img">
-          <img src="./assets/img/cama.JPG" alt="img_cama" />
-          <img src="./assets/img/sala_juguetero.JPG" alt="sala_juguetero" />
-          <img src="./assets/img/main_2.JPG" alt="recepcion" />
-          <img src="./assets/img/servicios_3.JPG" alt="recepcion" />
+          <img src="../assets/img/cama.JPG" alt="img_cama" />
+          <img src="../assets/img/sala_juguetero.JPG" alt="sala_juguetero" />
+          <img src="../assets/img/main_2.JPG" alt="recepcion" />
+          <img src="../assets/img/servicios_3.JPG" alt="recepcion" />
         </div>
         <div class="servicios-info">
           <p>
-            Los servicios solo estan disponibles para el área de Puerto Valalrta
-            y Bahia de Banderas. El envio de productos se efectuara a través de
-            paqueteria a convenir. Para más información no dude en contactarnos.
+            The services are only available for the Puerto Valalrta area and
+            Banderas Bay. The shipment of products will be made through package
+            to be agreed. For more information, please contact us.
           </p>
         </div>
       </div>
@@ -178,15 +180,15 @@
     <section class="anuncio">
       <div class="anuncio-container">
         <div class="anuncio-imagen">
-          <img src="./assets/madera.jpeg" alt="imagen-madera" />
+          <img src="../assets/madera.jpeg" alt="imagen-madera" />
         </div>
         <div>
-          <h2>Expertos en todo tipo de madera.</h2>
-          <h4>Conocemos muy bien nuestra materia prima.</h4>
+          <h2>Experts in all types of wood.</h2>
+          <h4>We know our raw material very well.</h4>
           <p>
-            Trabajo de calidad con todo tipo de madera como pino, parota,
-            tablaroca y muchas más. Tus productos estarás hechos de la mejor
-            calidad y protejidos completamente.
+            Quality work with all types of wood such as pine, parota, sheetrock
+            and many more. Your products will be made of the best quality and
+            fully protected.
           </p>
         </div>
       </div>
@@ -201,7 +203,7 @@
           <aside class="modal-box-img">
             <img
               class="modal-img"
-              src="./assets/img/390e0628-7844-40f1-bf44-f58a504c8273.JPG"
+              src="../assets/img/390e0628-7844-40f1-bf44-f58a504c8273.JPG"
               alt="modal"
             />
           </aside>
@@ -221,8 +223,8 @@
       <div class="grid-gallery">
         <!-- Name Gallery -->
         <div id="name-gallery">
-          <h2 class="gallery-name">Galeria</h2>
-          <p>Descrubre nuestro trabajo.</p>
+          <h2 class="gallery-name">GALLERY</h2>
+          <p>Discover our work.</p>
         </div>
         <!-- Top Gallery -->
         <div id="top-gallery">
@@ -230,7 +232,7 @@
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_1.jpg"
+                src="../assets/img/galeria_1.jpg"
                 alt="imagen-galeria"
               />
               <h1>Espejo</h1>
@@ -242,14 +244,14 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_2.jpg"
+                src="../assets/img/galeria_2.jpg"
                 alt="imagen-galeria"
               />
               <h1>Isla Cocina</h1>
@@ -261,14 +263,14 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_3.jpg"
+                src="../assets/img/galeria_3.jpg"
                 alt="imagen-galeria"
               />
               <h1>Cama</h1>
@@ -280,14 +282,14 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src=".,/assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_4.jpg"
+                src="../assets/img/galeria_4.jpg"
                 alt="imagen-galeria"
               />
               <h1>Espejo</h1>
@@ -299,12 +301,16 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
-              <img class="main-img" src="./assets/img/galeria_5.jpg" alt="" />
+              <img
+                class="main-img"
+                src="../assets/img/galeria_5.jpg"
+                alt="img_galeria"
+              />
               <h1>Alacena</h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -314,14 +320,14 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_6.jpg"
+                src="../assets/img/galeria_6.jpg"
                 alt="galeria-6"
               />
               <h1>Sala</h1>
@@ -333,14 +339,14 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_7.jpg"
+                src="../assets/img/galeria_7.jpg"
                 alt="galeria-7"
               />
               <h1>Baño</h1>
@@ -352,14 +358,14 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
             <div class="gallery-picture" href=".window">
               <img
                 class="main-img"
-                src="./assets/img/galeria_8.jpg"
+                src="../assets/img/galeria_8.jpg"
                 alt="galeria-8"
               />
               <h1>Silla</h1>
@@ -371,7 +377,7 @@
               </p>
               <div class="lupa-img">
                 <div class="lupa">
-                  <img src="./assets/svg/lupa.svg" width="100" height="100" />
+                  <img src="../assets/svg/lupa.svg" width="100" height="100" />
                 </div>
               </div>
             </div>
@@ -381,18 +387,18 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contacto">
+    <section id="contact" class="contacto">
       <div class="contacto-container">
         <div class="formulario">
           <div class="title-contacto">
-            <h2>Contacto</h2>
+            <h2>CONTACT</h2>
           </div>
           <form action="mail.php" method="post">
-            <label for="fname">Nombre completo</label>
+            <label for="fname">Full Name</label>
             <input type="text" id="fname" name="fname" required />
-            <label for="email">Correo electronico</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
-            <label for="tel">Teléfono</label>
+            <label for="tel">Phone</label>
             <input
               type="tel"
               id="tel"
@@ -400,20 +406,20 @@
               pattern="[0-9]{10}"
               required
             />
-            <label for="comentarios">Comentarios</label>
+            <label for="comentarios">Comments</label>
             <textarea
               name="comentarios"
               id="comentarios"
               rows="5"
               required
             ></textarea>
-            <button type="submit" name="submit">Enviar</button>
+            <button type="submit" name="submit">SEND</button>
           </form>
         </div>
 
         <div class="mapa">
           <div class="title-contacto">
-            <h2>Encuentranos</h2>
+            <h2>FIND US</h2>
           </div>
 
           <iframe
@@ -424,7 +430,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <div class="iconomap">
-            <img src="./assets/svg/location.svg" alt="" />
+            <img src="../assets/svg/location.svg" alt="location" />
             <p>Francia 957, Brisas del Pacífico, 48290 Puerto Vallarta, Jal.</p>
           </div>
 
@@ -434,7 +440,7 @@
             rel="noopener noreferrer"
           >
             <div class="iconomap">
-              <img src="./assets/svg/whatsapp.svg" alt="" />
+              <img src="../assets/svg/whatsapp.svg" alt="whatsapp" />
               <p>322-112-98-88</p>
             </div>
           </a>
@@ -447,7 +453,7 @@
     <!-- Footer -->
     <footer>
       <div class="logo-footer pt">
-        <img src="./assets/logo_v2.png" alt="icono" />
+        <img src="../assets/logo_v2.png" alt="icono" />
       </div>
       <div class="pt">
         <div class="referencia">
@@ -462,19 +468,19 @@
               href="https://wa.me/523221129888"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="./assets/svg/whatsapp_square.svg" alt="" />
+              ><img src="../assets/svg/whatsapp_square.svg" alt="whatsapp" />
             </a>
             <a
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="./assets/svg/facebook.svg" alt=""
+              ><img src="../assets/svg/facebook.svg" alt="facebook"
             /></a>
             <a
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="./assets/svg/instagram.svg" alt=""
+              ><img src="../assets/svg/instagram.svg" alt="instagram"
             /></a>
           </div>
         </div>
@@ -504,20 +510,20 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./assets/LOGO-CAJA-BLANCO.png" alt="" />
+            <img src="../assets/LOGO-CAJA-BLANCO.png" alt="logo" />
           </a>
           <p>Copyright 2022 Desarrollado por Racoon Devs</p>
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="./js/navbar.js"></script>
-    <script type="text/javascript" src="./js/lenguaje.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="./js/gallery.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/lenguaje.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
     ></script>
-    <script defer src="./js/functions.js"></script>
+    <script defer src="../js/functions.js"></script>
   </body>
 </html>
