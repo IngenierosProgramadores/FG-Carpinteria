@@ -16,7 +16,6 @@
     if (!$atributos['success']) {
         $errors[] = 'Verificación captcha obligatoria';
     }
-    if (count($errors) == 0) {
         ini_set( 'display_errors', 1 );
         error_reporting( E_ALL );
 
@@ -38,5 +37,4 @@
         echo "The email message was sent.";
         
         header("Location:https://fgcarpinteria.pvj.mx");
-    }
 ?>
