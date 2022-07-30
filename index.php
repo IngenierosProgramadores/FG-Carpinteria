@@ -83,26 +83,6 @@ if (isset($_POST['submit'])) {
     ></script>
   </head>
   <body>
-  <?php
-            if (isset($errors)) {
-                if (count($errors) > 0) {
-            ?>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                <?php
-                                foreach ($errors as $error) {
-                                    echo $error . '<br>';
-                                }
-                                ?>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        </div>
-                    </div>
-            <?php
-                }
-            }
-            ?>
     <header class="header">
       <nav class="nav container" id="nav">
         <a href="/" class="nav_logo">
@@ -478,6 +458,21 @@ if (isset($_POST['submit'])) {
               data-sitekey="6LddijMhAAAAADaCmiyiJks_oXDVO0MwmxaWYRF9"
             ></div>
             <br />
+            <?php
+            if (isset($errors)) {
+                if (count($errors) > 0) {
+            ?>
+              <p>
+                <?php
+                  foreach ($errors as $error) {
+                    echo $error . '<br>';
+                  }
+                  ?>
+              </p>  
+            <?php
+                }
+            }
+            ?>
             <button type="submit" name="submit">Enviar</button>
           </form>
         </div>
