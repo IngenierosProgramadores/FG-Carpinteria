@@ -44,6 +44,7 @@ footer {
   width: 100%;
 }
 .powerby img {
+  max-width: 250px;
   width: 80%;
 }
 hr {
@@ -71,6 +72,7 @@ hr {
     display: block;
   }
   .powerby img {
+    max-width: 250px;
     width: 70%;
   }
 }

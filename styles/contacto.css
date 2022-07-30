@@ -61,11 +61,19 @@
   display: block;
   padding: 2% 20%;
   margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(54, 28, 4);
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.formulario button:hover {
+  color: rgb(54, 28, 4);
+  background-color: #ffffff;
+  font-weight: bold;
 }
 .iconomap {
   display: flex;

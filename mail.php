@@ -5,17 +5,17 @@
     $comentarios = $_POST['comentarios'];
 
     $ip = $_SERVER['REMOTE_ADDR'];
-    // $captcha = $_POST['g-recaptcha-response'];
-    // $secretKey = "6LfkrqkgAAAAAI4MRZrcGtyXGChA7jtUmybAvwdv";
+    $captcha = $_POST['g-recaptcha-response'];
+    $secretKey = "6LddijMhAAAAAJBFYNRsEHax7PyngJN_y4sWFna-";
 
-    // $res = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha&remoteip=$ip");
+    $res = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha&remoteip=$ip");
 
-    // $atributos = json_decode($res, TRUE);
+    $atributos = json_decode($res, TRUE);
 
     // $errors = array();
-    // if (!$atributos['success']) {
-    //     $errors[] = 'Verificación captcha obligatoria';
-    // }
+    if (!$atributos['success']) {
+        $errors[] = 'Verificación captcha obligatoria';
+    }
 
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
