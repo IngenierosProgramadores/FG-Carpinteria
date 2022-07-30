@@ -16,26 +16,27 @@
     if (!$atributos['success']) {
         $errors[] = 'Verificación captcha obligatoria';
     }
+    if (count($errors) == 0) {
+        ini_set( 'display_errors', 1 );
+        error_reporting( E_ALL );
 
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
+        $from = 'admin@pvj.mx';
+        $to = "fgcarpinteria@pvj.mx";
+        $subject = "Contacto FG Carpinteria";
 
-    $from = 'admin@pvj.mx';
-    $to = "fgcarpinteria@pvj.mx";
-    $subject = "Contacto RacoonDevs";
+        $message = "NOMBRE : " . $nombre  . ",\r\n";
+        $message .= "CORREO : " . $correo . " \r\n";
+        $message .= "TELEFONO : " . $telefono . " \r\n";
+        $message .= "IP : " . $ip . " \r\n";
+        $message .= "COMENTARIOS : " . $comentarios . " \r\n";
 
-    $message = "NOMBRE : " . $nombre  . ",\r\n";
-    $message .= "CORREO : " . $correo . " \r\n";
-    $message .= "TELEFONO : " . $telefono . " \r\n";
-    $message .= "IP : " . $ip . " \r\n";
-    $message .= "COMENTARIOS : " . $comentarios . " \r\n";
-
-    $headers = "From:" . $from . " \r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-    $headers .= "Mime-Version: 1.0 \r\n";
-    $headers .= "Content-Type: text/plain";
-    mail($to,$subject, utf8_decode($message), $headers);
-    echo "The email message was sent.";
-    
-    header("Location:https://fgcarpinteria.pvj.mx");
+        $headers = "From:" . $from . " \r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+        $headers .= "Mime-Version: 1.0 \r\n";
+        $headers .= "Content-Type: text/plain";
+        mail($to,$subject, utf8_decode($message), $headers);
+        echo "The email message was sent.";
+        
+        header("Location:https://fgcarpinteria.pvj.mx");
+    }
 ?>
